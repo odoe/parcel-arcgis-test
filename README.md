@@ -20,6 +20,14 @@ parcel-arcgis.e31bb0bc.js:37 Uncaught (in promise) Error: Cannot find module 'Po
 
 Not sure what could be causing the error.
 
+There's a line of code in the entry file that looks like this.
+
+```js
+"./PortalQueryResult.js":"XSRi","./PortalUser.js":[["PortalUser.ad7103ec.js","D2K1"],"PortalUser.ad7103ec.js.map","D2K1"]
+```
+
+I can verify the file it's looking for exists, so not sure what the problem is.
+
 ## App
 
 This app uses [`parcel-plugin-static-files-copy`](https://www.npmjs.com/package/parcel-plugin-static-files-copy) to copy the `@arcgis/core/assets` folder to the build directory.
