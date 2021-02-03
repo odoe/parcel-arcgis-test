@@ -1,0 +1,28 @@
+{
+  "name": "parcel-arcgis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@arcgis/core": "^4.18.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "parcel-plugin-static-files-copy": "^2.5.1"
+  },
+  "staticFiles": {
+    "staticPath": [
+        {
+            "staticPath": "node_modules/@arcgis/core/assets/",
+            "staticOutDir": "assets/"
+        }
+    ]
+  }
+}
