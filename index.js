@@ -1,3 +1,5 @@
-import ArcGISMap from "@arcgis/core/Map";
+import WebMap from '@arcgis/core/WebMap';
 
-console.log('ArcGISMap', ArcGISMap);
+import'./index.css';
+
+console.log(WebMap);
